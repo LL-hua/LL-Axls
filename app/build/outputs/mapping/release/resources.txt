@@ -1,7 +1,15 @@
-@drawable/ic_excel : reachable=true
+@drawable/ic_launcher_bg : reachable=false
+@drawable/ic_launcher_fg : reachable=false
+@mipmap/ic_launcher : reachable=true
+    @drawable/ic_launcher_bg
+    @drawable/ic_launcher_fg
+@mipmap/ic_launcher_round : reachable=true
+    @drawable/ic_launcher_bg
+    @drawable/ic_launcher_fg
 
 The root reachable resources are:
- drawable:ic_excel:2130771968
+ mipmap:ic_launcher:2130837504
+ mipmap:ic_launcher_round:2130837505
 Unused resources are: 
 
-Resource shrinking did not work (grew from 2717 to 2757); using original instead
+Resource shrinking did not work (grew from 3787 to 3891); using original instead

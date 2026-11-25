@@ -2,6 +2,7 @@ com.llexcel.FormulaEngine:
     public void <init>()
     public static java.lang.String evaluate(java.lang.String,com.llexcel.XlsxBook$Sheet)
 com.llexcel.R$drawable
+com.llexcel.R$mipmap
 com.llexcel.R
 com.llexcel.SurveyMath:
     public void <init>()

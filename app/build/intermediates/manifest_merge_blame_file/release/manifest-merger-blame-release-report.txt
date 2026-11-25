@@ -19,94 +19,94 @@
 13-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:5:22-79
 14
 15    <application
-15-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:6:5-38:19
+15-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:6:5-39:19
 16        android:allowBackup="true"
-16-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:8:9-35
+16-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:9:9-35
 17        android:extractNativeLibs="true"
-18        android:icon="@drawable/ic_excel"
-18-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:7:9-42
+18        android:icon="@mipmap/ic_launcher"
+18-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:7:9-43
 19        android:label="LL-Axls"
-19-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:9:9-32
+19-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:10:9-32
 20        android:requestLegacyExternalStorage="true"
-20-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:10:9-52
+20-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:11:9-52
 21        android:theme="@android:style/Theme.Material.NoActionBar" >
-21-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:11:9-66
+21-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:12:9-66
 22        <activity
-22-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:12:9-37:20
+22-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:13:9-38:20
 23            android:name="com.llexcel.MainActivity"
-23-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:13:13-41
+23-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:14:13-41
 24            android:exported="true"
-24-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:14:13-36
+24-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:15:13-36
 25            android:windowSoftInputMode="adjustResize" >
-25-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:15:13-55
+25-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:16:13-55
 26            <intent-filter>
-26-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:16:13-19:29
+26-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:17:13-20:29
 27                <action android:name="android.intent.action.MAIN" />
-27-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:17:17-69
-27-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:17:25-66
+27-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:18:17-69
+27-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:18:25-66
 28
 29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:18:17-77
-29-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:18:27-74
+29-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:19:17-77
+29-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:19:27-74
 30            </intent-filter>
 31            <intent-filter>
-31-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:20:13-29:29
+31-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:21:13-30:29
 32                <action android:name="android.intent.action.VIEW" />
-32-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:21:17-69
-32-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:21:25-66
+32-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:17-69
+32-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:25-66
 33
 34                <category android:name="android.intent.category.DEFAULT" />
-34-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:17-76
-34-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:27-73
+34-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:17-76
+34-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:27-73
 35                <category android:name="android.intent.category.BROWSABLE" />
-35-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:17-78
-35-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:27-75
+35-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-78
+35-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:27-75
 36
 37                <data android:scheme="content" />
-37-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
-37-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:23-47
+37-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
+37-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:23-47
 38                <data android:scheme="file" />
-38-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
-38-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:23-47
+38-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
+38-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:23-47
 39                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
-39-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
-39-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:26:23-107
+39-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
+39-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:27:23-107
 40                <data android:mimeType="application/vnd.ms-excel" />
-40-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
-40-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:26:23-107
+40-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
+40-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:27:23-107
 41                <data android:mimeType="application/octet-stream" />
-41-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
-41-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:26:23-107
+41-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
+41-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:27:23-107
 42            </intent-filter>
 43            <intent-filter>
-43-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:30:13-36:29
+43-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:31:13-37:29
 44                <action android:name="android.intent.action.VIEW" />
-44-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:21:17-69
-44-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:21:25-66
+44-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:17-69
+44-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:25-66
 45
 46                <category android:name="android.intent.category.DEFAULT" />
-46-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:17-76
-46-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:22:27-73
+46-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:17-76
+46-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:27-73
 47                <category android:name="android.intent.category.BROWSABLE" />
-47-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:17-78
-47-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:23:27-75
+47-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-78
+47-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:27-75
 48
 49                <data
-49-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
+49-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
 50                    android:host="*"
-50-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:34:48-64
+50-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:35:48-64
 51                    android:pathPattern=".*\\.xlsx"
-51-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:34:65-96
+51-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:35:65-96
 52                    android:scheme="content" />
-52-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:23-47
+52-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:23-47
 53                <data
-53-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:17-50
+53-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:17-50
 54                    android:host="*"
-54-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:34:48-64
+54-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:35:48-64
 55                    android:pathPattern=".*\\.xlsx"
-55-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:34:65-96
+55-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:35:65-96
 56                    android:scheme="file" />
-56-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:24:23-47
+56-->/data/data/com.termux/files/home/LL-Axls/app/src/main/AndroidManifest.xml:25:23-47
 57            </intent-filter>
 58        </activity>
 59    </application>
