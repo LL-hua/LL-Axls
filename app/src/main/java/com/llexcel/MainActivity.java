@@ -107,8 +107,10 @@ public class MainActivity extends Activity {
         gridView.setFontSize(currentFontSize);
         gridView.listener = new ExcelGridView.Listener() {
             @Override public void onCellClick(int r, int c) { selectCell(r, c); }
-            @Override public void onColHeaderClick(int c) { showColDialog(c); }
-            @Override public void onRowHeaderClick(int r) { showRowDialog(r); }
+            @Override public void onColHeaderClick(int c) { selR = 0; selC = c; gridView.selR = 0; gridView.selC = c; gridView.selEndR = gridView.rowCount() - 1; gridView.selEndC = c; tvCellRef.setText(XlsxBook.indexToCol(c) + "列"); gridView.invalidate(); }
+            @Override public void onRowHeaderClick(int r) { selR = r; selC = 0; gridView.selR = r; gridView.selC = 0; gridView.selEndR = r; gridView.selEndC = gridView.colCount() - 1; tvCellRef.setText("第" + (r + 1) + "行"); gridView.invalidate(); }
+            @Override public void onColHeaderLongClick(int c) { showColDialog(c); }
+            @Override public void onRowHeaderLongClick(int r) { showRowDialog(r); }
             @Override public void onCellLongClick(int r, int c) { showCellContextMenu(r, c); }
             @Override public void onCellDoubleClick(int r, int c) {
                 selectCell(r, c);
@@ -353,7 +355,7 @@ public class MainActivity extends Activity {
         opts.add("合并所选区域 (" + rangeLabel + ")");
         opts.add("复制起点格 (" + XlsxBook.indexToCol(selC) + (selR + 1) + ")");
         opts.add("粘贴到此格 (" + ref + ")");
-        opts.add("行操作（第 " + (r + 1) + " 行）");
+        opts.add(r2 > r1 ? ("批量增删所选 " + (r2 - r1 + 1) + " 行（第" + (r1 + 1) + "~" + (r2 + 1) + "行）") : ("行操作（第 " + (r + 1) + " 行）"));
         opts.add("列操作（" + XlsxBook.indexToCol(col) + " 列）");
 
         new AlertDialog.Builder(this).setTitle("单元格与选区操作 (" + rangeLabel + ")")
@@ -468,7 +470,17 @@ public class MainActivity extends Activity {
                     Toast.makeText(this, "已复制: " + clipText, Toast.LENGTH_SHORT).show();
                 } else if (w == 5) {
                     sh.set(r, col, clipText); selectCell(r, col); gridView.refreshData(); gridView.ensureCellVisible(selR, selC);
-                } else if (w == 6) showRowDialog(r);
+                } else if (w == 6) {
+                    if (r2 > r1) {
+                        int cnt = r2 - r1 + 1;
+                        new AlertDialog.Builder(this).setTitle("所选 " + cnt + " 行操作")
+                            .setItems(new String[]{"在上方批量插入 " + cnt + " 行", "批量删除所选 " + cnt + " 行"}, (bd, bw) -> {
+                                if (bw == 0) sh.insertRows(r1, cnt);
+                                else sh.deleteRows(r1, cnt);
+                                gridView.selEndR = -1; gridView.selEndC = -1; renderAll();
+                            }).show();
+                    } else showRowDialog(r);
+                }
                 else if (w == 7) showColDialog(col);
             }).show();
     }
@@ -533,9 +545,23 @@ public class MainActivity extends Activity {
         b.show();
     }
 
+    private void promptBatchCount(String title, String hint, java.util.function.IntConsumer onOk) {
+        EditText et = new EditText(this);
+        et.setHint(hint);
+        et.setText("5");
+        et.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        et.selectAll();
+        new AlertDialog.Builder(this).setTitle(title).setView(et)
+            .setPositiveButton("确定", (d, w) -> {
+                int n = 1;
+                try { n = Math.max(1, Math.min(500, Integer.parseInt(et.getText().toString().trim()))); } catch (Exception ignored) {}
+                onOk.accept(n);
+            }).setNegativeButton("取消", null).show();
+    }
+
     private void showColDialog(int col) {
         String name = XlsxBook.indexToCol(col) + " 列";
-        String[] items = new String[]{"自适应列宽", "左对齐", "居中对齐", "右对齐", "加宽此列 (+30)", "变窄此列 (-25)", "隐藏此列", "显示全部隐藏列", "左侧插入一列", "右侧插入一列", "删除此列"};
+        String[] items = new String[]{"自适应列宽", "左对齐", "居中对齐", "右对齐", "加宽此列 (+30)", "变窄此列 (-25)", "隐藏此列", "显示全部隐藏列", "左侧插入一列", "右侧插入一列", "批量插入 N 列...", "删除此列", "批量删除 N 列..."};
         new AlertDialog.Builder(this).setTitle("列格式与操作: " + name)
             .setItems(items, (d, w) -> {
                 XlsxBook.Sheet sh = activeSheet();
@@ -549,14 +575,16 @@ public class MainActivity extends Activity {
                 else if (w == 7) gridView.hiddenCols.clear();
                 else if (w == 8) sh.insertCol(col);
                 else if (w == 9) sh.insertCol(col + 1);
-                else if (w == 10) sh.deleteCol(col);
+                else if (w == 10) { promptBatchCount("在 " + name + " 左侧批量插入", "输入列数 (1~500)", n -> { sh.insertCols(col, n); renderAll(); }); return; }
+                else if (w == 11) sh.deleteCol(col);
+                else if (w == 12) { promptBatchCount("从 " + name + " 起向右批量删除", "输入删除列数", n -> { sh.deleteCols(col, n); renderAll(); }); return; }
                 renderAll();
             }).show();
     }
 
     private void showRowDialog(int row) {
         String name = "第 " + (row + 1) + " 行";
-        String[] items = new String[]{"自适应行高", "整行左对齐", "整行居中对齐", "整行右对齐", "加高此行 (+12)", "变矮此行 (-8)", "隐藏此行", "显示全部隐藏行", "上方插入一行", "下方插入一行", "删除此行"};
+        String[] items = new String[]{"自适应行高", "整行左对齐", "整行居中对齐", "整行右对齐", "加高此行 (+12)", "变矮此行 (-8)", "隐藏此行", "显示全部隐藏行", "上方插入一行", "下方插入一行", "批量插入 N 行...", "删除此行", "批量删除 N 行..."};
         new AlertDialog.Builder(this).setTitle("行格式与操作: " + name)
             .setItems(items, (d, w) -> {
                 XlsxBook.Sheet sh = activeSheet();
@@ -570,7 +598,9 @@ public class MainActivity extends Activity {
                 else if (w == 7) gridView.hiddenRows.clear();
                 else if (w == 8) sh.insertRow(row);
                 else if (w == 9) sh.insertRow(row + 1);
-                else if (w == 10) sh.deleteRow(row);
+                else if (w == 10) { promptBatchCount("在" + name + "上方批量插入", "输入行数 (1~500)", n -> { sh.insertRows(row, n); renderAll(); }); return; }
+                else if (w == 11) sh.deleteRow(row);
+                else if (w == 12) { promptBatchCount("从" + name + "起向下批量删除", "输入删除行数", n -> { sh.deleteRows(row, n); renderAll(); }); return; }
                 renderAll();
             }).show();
     }

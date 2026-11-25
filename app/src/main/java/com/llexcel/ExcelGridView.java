@@ -11,6 +11,8 @@ public class ExcelGridView extends View {
         void onCellClick(int r, int c);
         void onColHeaderClick(int c);
         void onRowHeaderClick(int r);
+        void onColHeaderLongClick(int c);
+        void onRowHeaderLongClick(int r);
         void onCellLongClick(int r, int c);
         void onCellDoubleClick(int r, int c);
     }

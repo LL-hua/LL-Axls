@@ -1,6 +1,15 @@
+com.llexcel.ExcelGridView$Listener:
+    public abstract void onColHeaderLongClick(int)
+    public abstract void onRowHeaderLongClick(int)
 com.llexcel.FormulaEngine:
     public void <init>()
     public static java.lang.String evaluate(java.lang.String,com.llexcel.XlsxBook$Sheet)
+com.llexcel.MainActivity$2:
+    public void onColHeaderLongClick(int)
+    public void onRowHeaderLongClick(int)
+com.llexcel.MainActivity:
+    static synthetic void access$700(com.llexcel.MainActivity,int)
+    static synthetic void access$800(com.llexcel.MainActivity,int)
 com.llexcel.R$drawable
 com.llexcel.R$mipmap
 com.llexcel.R
@@ -27,11 +36,16 @@ com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da56
 com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$8
 com.llexcel.MainActivity$$InternalSyntheticLambda$2$2229b8091cead7ecab8d9f40cd3d41d1e14172812d92b7eff83e381c8fe47b6a$0
 com.llexcel.MainActivity$$InternalSyntheticLambda$2$56de4241f27c535b62b99ac38ff5d966f86b9ab6597e2c9334f948f5f9cec85f$0
-com.llexcel.MainActivity$$InternalSyntheticLambda$2$76604c222670ff96086ff2170ab52fa251304cf2ee43fcd939de83322c2bf0d6$0
 com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$1
 com.llexcel.MainActivity$$InternalSyntheticLambda$3$774b2446607620d948c53c88de717ee7f0a969c7db62054aca7dd3468dc9caf7$0
+com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$4
+com.llexcel.MainActivity$$InternalSyntheticLambda$4$76604c222670ff96086ff2170ab52fa251304cf2ee43fcd939de83322c2bf0d6$0
 com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$1
-com.llexcel.MainActivity$$InternalSyntheticLambda$5$c01de5d84ba941616d06c94f120e4fb34fe777e42539f926b2c289e625290cc3$0
+com.llexcel.MainActivity$$InternalSyntheticLambda$5$16c71683178398c8baba9e96df32bd17a88e768ffc31aedf0c98d4e113ac8721$0
+com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$1
+com.llexcel.MainActivity$$InternalSyntheticLambda$5$918c7670fd613950b198585594dce6ed743060e4439baf01572c14ed5ad917df$0
+com.llexcel.MainActivity$$InternalSyntheticLambda$5$918c7670fd613950b198585594dce6ed743060e4439baf01572c14ed5ad917df$1
+com.llexcel.MainActivity$$InternalSyntheticLambda$6$f41954c0f527a7521cc8ba5c5cb9e2dec44b0f9c50b976a7379d06b244613f2f$0
 com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0:
     public final synthetic int f$2
 com.llexcel.MainActivity$2:
@@ -47,7 +61,7 @@ com.llexcel.MainActivity:
     public int extraRows
     public final void commitFormula()
     public static void handleUri()
-    public static synthetic void lambda$createNewBook$28()
+    public static synthetic void lambda$createNewBook$34()
     public static synthetic void lambda$onCreate$0()
     public static synthetic void lambda$onCreate$1()
     public static synthetic void lambda$onCreate$10()
@@ -66,23 +80,32 @@ com.llexcel.MainActivity:
     public static synthetic void lambda$showCellContextMenu$16()
     public static void lambda$showCellContextMenu$17()
     public static synthetic void lambda$showCellContextMenu$18()
-    public static void lambda$showCellContextMenu$20()
-    public static void lambda$showColDialog$24()
+    public static synthetic void lambda$showCellContextMenu$20()
+    public static void lambda$showCellContextMenu$21()
+    public static synthetic void lambda$showColDialog$26()
+    public static synthetic void lambda$showColDialog$27()
+    public static void lambda$showColDialog$28()
     public static synthetic void lambda$showFormulaHelper$14()
-    public static synthetic void lambda$showMergeDialog$22()
     public static synthetic void lambda$showMergeDialog$23()
-    public static synthetic void lambda$showOpenDialog$27()
-    public static void lambda$showOpenMenu$26()
-    public static void lambda$showRowDialog$25()
+    public static synthetic void lambda$showMergeDialog$24()
+    public static synthetic void lambda$showOpenDialog$33()
+    public static void lambda$showOpenMenu$32()
+    public static synthetic void lambda$showRowDialog$29()
+    public static synthetic void lambda$showRowDialog$30()
+    public static void lambda$showRowDialog$31()
     public static void onPadKey()
     public static void saveCurrentBook()
     public static void showCellContextMenu()
+    public static void showColDialog()
     public static void showFormulaHelper()
     public static void showMergeDialog()
     public static void showOpenDialog()
     public static void showOpenMenu()
-com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$6a781915dbd84a0da91984958b247669feabd65558f7e9438301fa8773a49829$0
+    public static void showRowDialog()
+com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$6$3d6c132a59075349a9b72e18e2ef366e831289e8b650defbb34515f76e04185c$0
 com.llexcel.XlsxBook$Sheet:
     public static void deleteCol()
     public static void deleteRow()
+    public static void insertCol()
+    public static void insertRow()
 com.llexcel.XlsxBook

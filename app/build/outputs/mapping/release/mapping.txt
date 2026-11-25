@@ -3,14 +3,14 @@
 # min_api: 24
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: 2379ee2
-# pg_map_hash: SHA-256 2379ee25c8fcc5c114e4433a99d361d512056cd7fe3eb043859610ac39de34ed
+# pg_map_id: cb34aef
+# pg_map_hash: SHA-256 cb34aef5509b759bbda15e07215c4767007a8dfbdb66a5f65ab94131fbcece0f
 com.llexcel.ExcelGridView -> a.b:
 # {"id":"sourceFile","fileName":"ExcelGridView.java"}
     com.llexcel.XlsxBook book -> a
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/y;"}
     com.llexcel.XlsxBook$Sheet sheet -> b
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/a0;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
     int selR -> c
     int selC -> d
     int selEndR -> e
@@ -41,7 +41,7 @@ com.llexcel.ExcelGridView -> a.b:
     android.widget.OverScroller scroller -> v
     android.view.GestureDetector detector -> w
     com.llexcel.ExcelGridView$Listener listener -> x
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/y;"}
     float scrollX -> y
     float scrollY -> z
     1:1:void <init>(android.content.Context,android.graphics.Typeface):0:0 -> <init>
@@ -55,81 +55,132 @@ com.llexcel.ExcelGridView -> a.b:
     2:2:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
     3:3:void com.llexcel.ExcelGridView.handleTap(float,float,int):0:0 -> a
     3:3:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    4:4:void com.llexcel.MainActivity$2.onColHeaderClick(int):0:0 -> a
+    4:4:int com.llexcel.MainActivity.access$102(com.llexcel.MainActivity,int):0:0 -> a
+    4:4:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     4:4:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     4:4:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    5:5:void com.llexcel.MainActivity.access$600(com.llexcel.MainActivity,int):0:0 -> a
+    5:5:int com.llexcel.MainActivity.access$202(com.llexcel.MainActivity,int):0:0 -> a
     5:5:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     5:5:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     5:5:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    6:6:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0:0 -> a
+    6:6:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    6:6:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     6:6:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     6:6:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    7:7:void com.llexcel.MainActivity.access$700(com.llexcel.MainActivity,int):0:0 -> a
-    7:7:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
+    7:7:void com.llexcel.MainActivity$2.onColHeaderClick(int):0:0 -> a
     7:7:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     7:7:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    8:8:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0:0 -> a
+    8:8:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    8:8:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     8:8:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     8:8:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    9:9:void com.llexcel.MainActivity.access$800(com.llexcel.MainActivity,int,int):0:0 -> a
-    9:9:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0 -> a
+    9:9:void com.llexcel.MainActivity$2.onColHeaderClick(int):0:0 -> a
     9:9:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     9:9:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    10:10:void com.llexcel.MainActivity.showCellContextMenu(int,int):0:0 -> a
-    10:10:void com.llexcel.MainActivity.access$800(com.llexcel.MainActivity,int,int):0 -> a
-    10:10:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0 -> a
+    10:10:android.widget.TextView com.llexcel.MainActivity.access$600(com.llexcel.MainActivity):0:0 -> a
+    10:10:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     10:10:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     10:10:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    11:11:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    11:11:void com.llexcel.MainActivity$2.onColHeaderClick(int):0:0 -> a
     11:11:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     11:11:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    12:12:void com.llexcel.MainActivity.access$500(com.llexcel.MainActivity,int,int):0:0 -> a
-    12:12:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    12:12:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    12:12:void com.llexcel.MainActivity$2.onColHeaderClick(int):0 -> a
     12:12:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     12:12:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    13:13:android.widget.EditText com.llexcel.MainActivity.access$900(com.llexcel.MainActivity):0:0 -> a
-    13:13:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    13:13:void com.llexcel.MainActivity$2.onColHeaderClick(int):0:0 -> a
     13:13:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     13:13:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    14:14:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    14:14:int com.llexcel.MainActivity.access$102(com.llexcel.MainActivity,int):0:0 -> a
+    14:14:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
     14:14:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     14:14:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    15:15:android.widget.LinearLayout com.llexcel.MainActivity.access$1000(com.llexcel.MainActivity):0:0 -> a
-    15:15:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    15:15:int com.llexcel.MainActivity.access$202(com.llexcel.MainActivity,int):0:0 -> a
+    15:15:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
     15:15:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     15:15:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    16:16:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    16:16:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    16:16:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
     16:16:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     16:16:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    17:17:android.widget.EditText com.llexcel.MainActivity.access$900(com.llexcel.MainActivity):0:0 -> a
-    17:17:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    17:17:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0:0 -> a
     17:17:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     17:17:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    18:18:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    18:18:android.widget.TextView com.llexcel.MainActivity.access$600(com.llexcel.MainActivity):0:0 -> a
+    18:18:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
     18:18:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     18:18:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    19:19:android.widget.EditText com.llexcel.MainActivity.access$900(com.llexcel.MainActivity):0:0 -> a
-    19:19:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    19:19:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0:0 -> a
     19:19:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     19:19:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    20:20:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    20:20:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    20:20:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0 -> a
     20:20:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     20:20:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    21:21:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
-    21:21:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    21:21:void com.llexcel.MainActivity$2.onRowHeaderClick(int):0:0 -> a
     21:21:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     21:21:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    22:22:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    22:22:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0:0 -> a
     22:22:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     22:22:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    23:23:void com.llexcel.MainActivity$2.onCellClick(int,int):0:0 -> a
+    23:23:void com.llexcel.MainActivity.access$900(com.llexcel.MainActivity,int,int):0:0 -> a
+    23:23:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0 -> a
     23:23:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     23:23:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
-    24:24:void com.llexcel.MainActivity.access$500(com.llexcel.MainActivity,int,int):0:0 -> a
-    24:24:void com.llexcel.MainActivity$2.onCellClick(int,int):0 -> a
+    24:24:void com.llexcel.MainActivity.showCellContextMenu(int,int):0:0 -> a
+    24:24:void com.llexcel.MainActivity.access$900(com.llexcel.MainActivity,int,int):0 -> a
+    24:24:void com.llexcel.MainActivity$2.onCellLongClick(int,int):0 -> a
     24:24:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
     24:24:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    25:25:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    25:25:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    25:25:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    26:26:void com.llexcel.MainActivity.access$500(com.llexcel.MainActivity,int,int):0:0 -> a
+    26:26:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    26:26:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    26:26:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    27:27:android.widget.EditText com.llexcel.MainActivity.access$1000(com.llexcel.MainActivity):0:0 -> a
+    27:27:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    27:27:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    27:27:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    28:28:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    28:28:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    28:28:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    29:29:android.widget.LinearLayout com.llexcel.MainActivity.access$1100(com.llexcel.MainActivity):0:0 -> a
+    29:29:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    29:29:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    29:29:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    30:30:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    30:30:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    30:30:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    31:31:android.widget.EditText com.llexcel.MainActivity.access$1000(com.llexcel.MainActivity):0:0 -> a
+    31:31:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    31:31:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    31:31:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    32:32:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    32:32:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    32:32:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    33:33:android.widget.EditText com.llexcel.MainActivity.access$1000(com.llexcel.MainActivity):0:0 -> a
+    33:33:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    33:33:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    33:33:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    34:34:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    34:34:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    34:34:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    35:35:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> a
+    35:35:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0 -> a
+    35:35:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    35:35:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    36:36:void com.llexcel.MainActivity$2.onCellDoubleClick(int,int):0:0 -> a
+    36:36:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    36:36:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    37:37:void com.llexcel.MainActivity$2.onCellClick(int,int):0:0 -> a
+    37:37:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    37:37:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
+    38:38:void com.llexcel.MainActivity.access$500(com.llexcel.MainActivity,int,int):0:0 -> a
+    38:38:void com.llexcel.MainActivity$2.onCellClick(int,int):0 -> a
+    38:38:void com.llexcel.ExcelGridView.handleTap(float,float,int):0 -> a
+    38:38:void access$600(com.llexcel.ExcelGridView,float,float,int):0 -> a
     1:1:int com.llexcel.ExcelGridView.hdrW():0:0 -> b
     1:1:int com.llexcel.ExcelGridView.totalW():0 -> b
     1:1:void clampScroll(float,float):0 -> b
@@ -145,10 +196,10 @@ com.llexcel.ExcelGridView -> a.b:
     1:1:int colCount():0:0 -> c
     1:1:void computeScroll():0:0 -> computeScroll
     1:1:float dp(float):0:0 -> d
-    1:1:int com.llexcel.ExcelGridView.hdrH():0:0 -> e
-    1:1:void ensureCellVisible(int,int):0 -> e
+    3:7:int com.llexcel.ExcelGridView.hdrH():0:0 -> e
+    3:7:void ensureCellVisible(int,int):0 -> e
       # {"id":"com.android.tools.r8.residualsignature","signature":"(I)V"}
-    2:2:void ensureCellVisible(int,int):0:0 -> e
+    8:71:void ensureCellVisible(int,int):0:0 -> e
     1:1:int getColW(int):0:0 -> f
     1:1:java.lang.String com.llexcel.FormulaEngine.evaluate(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook):0:0 -> g
     1:1:java.lang.String getDisplay(int,int):0 -> g
@@ -200,13 +251,13 @@ com.llexcel.ExcelGridView$1 -> a.a:
     8:8:boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onFling
     9:9:boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float):0:0 -> onFling
     1:1:void onLongPress(android.view.MotionEvent):0:0 -> onLongPress
-    1:1:float com.llexcel.ExcelGridView.access$100(com.llexcel.ExcelGridView):0:0 -> onScroll
-    1:1:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
-    2:2:float com.llexcel.ExcelGridView.access$200(com.llexcel.ExcelGridView):0:0 -> onScroll
-    2:2:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
-    3:3:void com.llexcel.ExcelGridView.access$300(com.llexcel.ExcelGridView,float,float):0:0 -> onScroll
-    3:3:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
-    4:4:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0:0 -> onScroll
+    3:5:float com.llexcel.ExcelGridView.access$100(com.llexcel.ExcelGridView):0:0 -> onScroll
+    3:5:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
+    6:8:float com.llexcel.ExcelGridView.access$200(com.llexcel.ExcelGridView):0:0 -> onScroll
+    6:8:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
+    9:11:void com.llexcel.ExcelGridView.access$300(com.llexcel.ExcelGridView,float,float):0:0 -> onScroll
+    9:11:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0 -> onScroll
+    12:16:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):0:0 -> onScroll
     1:1:boolean onSingleTapConfirmed(android.view.MotionEvent):0:0 -> onSingleTapConfirmed
 com.llexcel.FormulaEngine -> a.d:
 # {"id":"sourceFile","fileName":"FormulaEngine.java"}
@@ -215,7 +266,7 @@ com.llexcel.FormulaEngine -> a.d:
     1:1:void <clinit>():0:0 -> <clinit>
     1:1:java.lang.String com.llexcel.SurveyMath.num2K(double):0:0 -> a
     1:1:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/a0;La/x;Ljava/util/HashSet;)Ljava/lang/String;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/b0;La/y;Ljava/util/HashSet;)Ljava/lang/String;"}
     2:2:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
     3:3:java.util.List com.llexcel.FormulaEngine.collectRange(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
     3:3:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
@@ -230,16 +281,16 @@ com.llexcel.FormulaEngine -> a.d:
     8:8:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0 -> a
     8:8:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
     1:1:double[][] readTable(com.llexcel.XlsxBook,java.lang.String,int):0:0 -> b
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/x;Ljava/lang/String;I)[[D"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/y;Ljava/lang/String;I)[[D"}
 com.llexcel.FormulaEngine$1 -> a.c:
 # {"id":"sourceFile","fileName":"FormulaEngine.java"}
     int pos -> a
     int ch -> b
     java.lang.String val$str -> c
     com.llexcel.XlsxBook val$book -> d
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/y;"}
     1:1:void <init>(java.lang.String,com.llexcel.XlsxBook):0:0 -> <init>
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/x;)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/y;)V"}
     1:1:boolean eat(int):0:0 -> a
     1:1:double expr():0:0 -> b
     1:1:double com.llexcel.FormulaEngine.callFunc(java.lang.String,java.util.List,com.llexcel.XlsxBook):0:0 -> c
@@ -261,7 +312,7 @@ com.llexcel.MainActivity -> com.llexcel.MainActivity:
     int currentFontSize -> b
     android.widget.LinearLayout numPad -> c
     com.llexcel.XlsxBook book -> d
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/y;"}
     int curSheet -> e
     int selR -> f
     int selC -> g
@@ -276,21 +327,21 @@ com.llexcel.MainActivity -> com.llexcel.MainActivity:
     int $r8$clinit -> o
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:com.llexcel.XlsxBook$Sheet activeSheet():0:0 -> a
-      # {"id":"com.android.tools.r8.residualsignature","signature":"()La/a0;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()La/b0;"}
     1:1:void commitAndMove(int,int):0:0 -> b
     1:1:void createNewBook():0:0 -> c
     1:1:void doStepFill(com.llexcel.XlsxBook$Sheet,int,int,int,int,int,double):0:0 -> d
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/a0;IIIIID)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/b0;IIIIID)V"}
     1:1:int dp(int):0:0 -> e
     1:1:android.widget.Button makeBtn(java.lang.String,int):0:0 -> f
-    1:1:void com.llexcel.ExcelGridView.setSheet(com.llexcel.XlsxBook$Sheet,boolean):0:0 -> g
-    1:1:void renderAll():0 -> g
+    1:1:void promptBatchCount(java.lang.String,java.lang.String,java.util.function.IntConsumer):0:0 -> g
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ljava/lang/String;La/m;)V"}
+    1:1:void com.llexcel.ExcelGridView.setSheet(com.llexcel.XlsxBook$Sheet,boolean):0:0 -> h
+    1:1:void renderAll():0 -> h
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    2:2:void com.llexcel.ExcelGridView.setSheet(com.llexcel.XlsxBook$Sheet,boolean):0:0 -> g
-    2:2:void renderAll():0 -> g
-    1:1:void selectCell(int,int):0:0 -> h
-    1:1:void showColDialog(int):0:0 -> i
-    1:1:void showRowDialog(int):0:0 -> j
+    2:2:void com.llexcel.ExcelGridView.setSheet(com.llexcel.XlsxBook$Sheet,boolean):0:0 -> h
+    2:2:void renderAll():0 -> h
+    1:1:void selectCell(int,int):0:0 -> i
     1:1:void com.llexcel.MainActivity$2.<init>(com.llexcel.MainActivity):0:0 -> onCreate
     1:1:void onCreate(android.os.Bundle):0 -> onCreate
     2:2:void onCreate(android.os.Bundle):0:0 -> onCreate
@@ -307,15 +358,15 @@ com.llexcel.MainActivity$$ExternalSyntheticApiModelOutline0 -> a.e:
 # {"id":"com.android.tools.r8.synthesized"}
     1:1:boolean com.llexcel.MainActivity$$InternalSyntheticApiModelOutline$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$10.m():0:0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda1 -> a.m:
+com.llexcel.MainActivity$$ExternalSyntheticLambda1 -> a.n:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     int com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.$r8$classId -> a
       # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.f$0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    1:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.<init>(com.llexcel.MainActivity):0:0 -> <init>
-    1:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.$r8$init$synthetic(com.llexcel.MainActivity,int):0 -> <init>
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.<init>(com.llexcel.MainActivity):0:0 -> <init>
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.$r8$init$synthetic(com.llexcel.MainActivity,int):0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity.lambda$renderAll$13(android.view.View):0:0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$0.onClick$bridge(android.view.View):0 -> onClick
@@ -347,108 +398,172 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda1 -> a.m:
 com.llexcel.MainActivity$$ExternalSyntheticLambda10 -> a.f:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.f$0 -> a
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.f$0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.f$1 -> b
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.f$1 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.<init>(com.llexcel.MainActivity,int):0:0 -> <init>
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.f$2 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    5:46:void com.llexcel.MainActivity.lambda$renderAll$12(int,android.view.View):0:0 -> onClick
-    5:46:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.onClick(android.view.View):0 -> onClick
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.f$3 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.f$4 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.<init>(com.llexcel.MainActivity,int,int,int,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$15(int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$0.onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
 com.llexcel.MainActivity$$ExternalSyntheticLambda11 -> a.g:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.f$0 -> a
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.f$1 -> b
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$1 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.f$2 -> c
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$2 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.f$3 -> d
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$3 -> d
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.f$4 -> e
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$4 -> e
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.<init>(com.llexcel.MainActivity,int,int,int,int):0:0 -> <init>
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$5 -> f
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$15(int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$0.onClick(android.content.DialogInterface,int):0 -> onClick
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$6 -> g
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda12 -> a.h:
-# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
-# {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$0 -> a
+    com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$7 -> h
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$1 -> b
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$8 -> i
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$2 -> c
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.f$9 -> j
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$3 -> d
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.<init>(com.llexcel.MainActivity,int,int,int,int,int,int,com.llexcel.XlsxBook$Sheet,int,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$4 -> e
-      # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$5 -> f
-      # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$6 -> g
-      # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$7 -> h
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/a0;"}
-      # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$8 -> i
-      # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.f$9 -> j
-      # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.<init>(com.llexcel.MainActivity,int,int,int,int,int,int,com.llexcel.XlsxBook$Sheet,int,int):0:0 -> <init>
-      # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;IIIIIILa/a0;II)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;IIIIIILa/b0;II)V"}
     1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$17(int,int,int,int,int,int,com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0:0 -> onClick
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.onClick(android.content.DialogInterface,int):0 -> onClick
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
     2:2:java.lang.String com.llexcel.MainActivity.shiftFormulaRows(java.lang.String,int):0:0 -> onClick
     2:2:void com.llexcel.MainActivity.lambda$showCellContextMenu$17(int,int,int,int,int,int,com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0 -> onClick
-    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.onClick(android.content.DialogInterface,int):0 -> onClick
+    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.onClick(android.content.DialogInterface,int):0 -> onClick
     3:3:void com.llexcel.MainActivity.lambda$showCellContextMenu$17(int,int,int,int,int,int,com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0:0 -> onClick
-    3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$1.onClick(android.content.DialogInterface,int):0 -> onClick
+    3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$1.onClick(android.content.DialogInterface,int):0 -> onClick
+com.llexcel.MainActivity$$ExternalSyntheticLambda12 -> a.h:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.f$0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.f$1 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.f$2 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.f$3 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.<init>(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int,int):0:0 -> <init>
+    1:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.$r8$init$synthetic(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int,int,int):0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;La/b0;III)V"}
+    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$20(com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0:0 -> onClick
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity.lambda$showCellContextMenu$18(com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$2.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
 com.llexcel.MainActivity$$ExternalSyntheticLambda13 -> a.i:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.f$0 -> a
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.$r8$classId -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.f$1 -> b
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/a0;"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.f$0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.f$2 -> c
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.f$1 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.f$3 -> d
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.f$2 -> d
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.<init>(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int,int):0:0 -> <init>
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.f$3 -> e
       # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;La/a0;II)V"}
-    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$18(com.llexcel.XlsxBook$Sheet,int,int,android.content.DialogInterface,int):0:0 -> onClick
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$2.onClick(android.content.DialogInterface,int):0 -> onClick
+    1:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.<init>(int,int,int,int):0:0 -> <init>
+    1:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.$r8$init$synthetic(int,int,int,int,int):0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
+    22:40:boolean com.llexcel.MainActivity.lambda$showMergeDialog$22(int,int,int,int,int[]):0:0 -> test
+    22:40:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.test$bridge(java.lang.Object):0 -> test
+      # {"id":"com.android.tools.r8.synthesized"}
+    41:44:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.test$bridge(java.lang.Object):0:0 -> test
+    45:64:boolean com.llexcel.MainActivity.lambda$showCellContextMenu$19(int,int,int,int,int[]):0:0 -> test
+    45:64:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$77842b6b95d1c5e1fbe30dbc6927388ccfba658cb37bfff97509d661286ac095$3.test$bridge(java.lang.Object):0 -> test
 com.llexcel.MainActivity$$ExternalSyntheticLambda14 -> a.j:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.$r8$classId -> a
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.$r8$classId -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.f$0 -> b
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.f$0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.f$1 -> c
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.f$1 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.f$2 -> d
+    java.lang.String com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.f$2 -> d
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.f$3 -> e
+    1:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.<init>(com.llexcel.MainActivity,int,java.lang.String):0:0 -> <init>
+    1:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.$r8$init$synthetic(com.llexcel.MainActivity,int,java.lang.String,int):0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.<init>(int,int,int,int):0:0 -> <init>
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.$r8$init$synthetic(int,int,int,int,int):0 -> <init>
+    1:1:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:boolean com.llexcel.MainActivity.lambda$showMergeDialog$21(int,int,int,int,int[]):0:0 -> test
-    1:1:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.test$bridge(java.lang.Object):0 -> test
-      # {"id":"com.android.tools.r8.synthesized"}
-    2:2:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.test$bridge(java.lang.Object):0:0 -> test
-    3:3:boolean com.llexcel.MainActivity.lambda$showCellContextMenu$19(int,int,int,int,int[]):0:0 -> test
-    3:3:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$3$49306e889ba804366af2fed78eb3c8c6f31de6cf0acef18ed4d10924a5593ea6$3.test$bridge(java.lang.Object):0 -> test
+    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    4:4:void com.llexcel.ExcelGridView.autoFitCol(int):0:0 -> onClick
+    4:4:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    4:4:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    5:5:void com.llexcel.ExcelGridView.autoFitCol(int):0:0 -> onClick
+    5:5:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+    5:5:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    6:6:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    6:6:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    7:7:void com.llexcel.XlsxBook$Sheet.insertCol(int):0:0 -> onClick
+    7:7:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:7:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    8:8:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    8:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    9:9:void com.llexcel.XlsxBook$Sheet.deleteCol(int):0:0 -> onClick
+    9:9:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    9:9:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    10:10:void com.llexcel.MainActivity.lambda$showColDialog$28(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    10:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    11:11:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    12:12:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    12:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    13:13:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
+    13:13:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+    13:13:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    14:14:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    14:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    15:15:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
+    15:15:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:15:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    16:16:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
+    16:16:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+    16:16:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    17:17:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    17:17:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    18:18:void com.llexcel.XlsxBook$Sheet.insertRow(int):0:0 -> onClick
+    18:18:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    18:18:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    19:19:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    19:19:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    20:20:void com.llexcel.XlsxBook$Sheet.deleteRow(int):0:0 -> onClick
+    20:20:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    20:20:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    21:21:void com.llexcel.MainActivity.lambda$showRowDialog$31(int,java.lang.String,android.content.DialogInterface,int):0:0 -> onClick
+    21:21:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
 com.llexcel.MainActivity$$ExternalSyntheticLambda15 -> a.k:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
@@ -457,7 +572,7 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda15 -> a.k:
     android.widget.EditText com.llexcel.MainActivity$$InternalSyntheticLambda$4$93177ab98b8cfa8ca681ce712fcebd1ebf866c50cda6d5b79ff1689b41f37c95$0.f$1 -> b
       # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$4$93177ab98b8cfa8ca681ce712fcebd1ebf866c50cda6d5b79ff1689b41f37c95$0.f$2 -> c
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/a0;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
       # {"id":"com.android.tools.r8.synthesized"}
     int com.llexcel.MainActivity$$InternalSyntheticLambda$4$93177ab98b8cfa8ca681ce712fcebd1ebf866c50cda6d5b79ff1689b41f37c95$0.f$3 -> d
       # {"id":"com.android.tools.r8.synthesized"}
@@ -471,7 +586,7 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda15 -> a.k:
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$93177ab98b8cfa8ca681ce712fcebd1ebf866c50cda6d5b79ff1689b41f37c95$0.<init>(com.llexcel.MainActivity,android.widget.EditText,com.llexcel.XlsxBook$Sheet,int,int,int,int,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;Landroid/widget/EditText;La/a0;IIIII)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;Landroid/widget/EditText;La/b0;IIIII)V"}
     1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$16(android.widget.EditText,com.llexcel.XlsxBook$Sheet,int,int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$93177ab98b8cfa8ca681ce712fcebd1ebf866c50cda6d5b79ff1689b41f37c95$0.onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
@@ -483,24 +598,52 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda16 -> a.l:
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.f$0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.f$2 -> c
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/a0;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
       # {"id":"com.android.tools.r8.synthesized"}
     android.widget.EditText com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.f$1 -> d
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.$r8$init$synthetic(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int[]):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;La/a0;[I)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;La/b0;[I)V"}
     2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.$r8$init$synthetic(com.llexcel.MainActivity,android.widget.EditText,com.llexcel.XlsxBook$Sheet):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;Landroid/widget/EditText;La/a0;)V"}
-    1:1:void com.llexcel.MainActivity.lambda$showMergeDialog$23(com.llexcel.XlsxBook$Sheet,int[],android.content.DialogInterface,int):0:0 -> onClick
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;Landroid/widget/EditText;La/b0;)V"}
+    1:1:void com.llexcel.MainActivity.lambda$showMergeDialog$24(com.llexcel.XlsxBook$Sheet,int[],android.content.DialogInterface,int):0:0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
     2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
-    3:3:void com.llexcel.MainActivity.lambda$showMergeDialog$22(android.widget.EditText,com.llexcel.XlsxBook$Sheet,android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity.lambda$showMergeDialog$23(android.widget.EditText,com.llexcel.XlsxBook$Sheet,android.content.DialogInterface,int):0:0 -> onClick
     3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$4$f65096d79f104b56134e3391453199769da70d74c0ed38052a798b6708177234$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-com.llexcel.MainActivity$$ExternalSyntheticLambda2 -> a.n:
+com.llexcel.MainActivity$$ExternalSyntheticLambda17 -> a.m:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.f$0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.f$1 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/b0;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.f$2 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.<init>(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int):0:0 -> <init>
+    1:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.$r8$init$synthetic(com.llexcel.MainActivity,com.llexcel.XlsxBook$Sheet,int,int):0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/llexcel/MainActivity;La/b0;II)V"}
+    17:23:void com.llexcel.MainActivity.lambda$showRowDialog$30(com.llexcel.XlsxBook$Sheet,int,int):0:0 -> accept
+    17:23:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0 -> accept
+      # {"id":"com.android.tools.r8.synthesized"}
+    24:28:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0:0 -> accept
+    29:35:void com.llexcel.MainActivity.lambda$showRowDialog$29(com.llexcel.XlsxBook$Sheet,int,int):0:0 -> accept
+    29:35:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0 -> accept
+    36:40:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0:0 -> accept
+    41:47:void com.llexcel.MainActivity.lambda$showColDialog$27(com.llexcel.XlsxBook$Sheet,int,int):0:0 -> accept
+    41:47:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0 -> accept
+    48:52:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0:0 -> accept
+    53:60:void com.llexcel.MainActivity.lambda$showColDialog$26(com.llexcel.XlsxBook$Sheet,int,int):0:0 -> accept
+    53:60:void com.llexcel.MainActivity$$InternalSyntheticLambda$5$207c82117e7ad66397da23963db51aa9cd56dce76f82ae24dbe6f9c7b8d2761f$0.accept$bridge(int):0 -> accept
+com.llexcel.MainActivity$$ExternalSyntheticLambda2 -> a.o:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$2.f$0 -> a
@@ -510,7 +653,7 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda2 -> a.n:
     1:1:void com.llexcel.MainActivity.lambda$onCreate$3(android.view.View,int,int,int,int,int,int,int,int):0:0 -> onLayoutChange
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$2.onLayoutChange(android.view.View,int,int,int,int,int,int,int,int):0 -> onLayoutChange
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda3 -> a.o:
+com.llexcel.MainActivity$$ExternalSyntheticLambda3 -> a.p:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$3.f$0 -> a
@@ -523,7 +666,7 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda3 -> a.o:
     1:1:void com.llexcel.MainActivity.lambda$onCreate$4(java.lang.String,android.view.View):0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$3.onClick(android.view.View):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda4 -> a.p:
+com.llexcel.MainActivity$$ExternalSyntheticLambda4 -> a.q:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$9.f$0 -> a
@@ -535,41 +678,45 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda4 -> a.p:
     7:10:boolean com.llexcel.MainActivity$$InternalSyntheticLambda$1$8aa519dde7bdfecb2d000a42da5608ca6fecfd3c57934d790865ca022e3c029d$9.onEditorAction(android.widget.TextView,int,android.view.KeyEvent):0 -> onEditorAction
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda5 -> a.q:
+com.llexcel.MainActivity$$ExternalSyntheticLambda5 -> a.r:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     int com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.$r8$classId -> a
       # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.f$0 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Landroid/view/KeyEvent$Callback;"}
       # {"id":"com.android.tools.r8.synthesized"}
     int[] com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.f$1 -> c
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
       # {"id":"com.android.tools.r8.synthesized"}
     1:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.<init>(com.llexcel.MainActivity,int[]):0:0 -> <init>
-    1:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.$r8$init$synthetic(com.llexcel.MainActivity,java.lang.Object,int):0 -> <init>
+    1:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.$r8$init$synthetic(android.view.KeyEvent$Callback,java.lang.Object,int):0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity.lambda$showOpenDialog$27(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
+    1:1:void com.llexcel.MainActivity.lambda$promptBatchCount$25(android.widget.EditText,java.util.function.IntConsumer,android.content.DialogInterface,int):0:0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    2:2:com.llexcel.XlsxBook com.llexcel.XlsxBook.load(java.io.File):0:0 -> onClick
-    2:2:void com.llexcel.MainActivity.lambda$showOpenDialog$27(java.util.List,android.content.DialogInterface,int):0 -> onClick
-    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    3:3:void com.llexcel.MainActivity.lambda$showOpenDialog$27(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
+    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity.lambda$showOpenDialog$33(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
     3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
     4:4:com.llexcel.XlsxBook com.llexcel.XlsxBook.load(java.io.File):0:0 -> onClick
-    4:4:void com.llexcel.MainActivity.lambda$showOpenDialog$27(java.util.List,android.content.DialogInterface,int):0 -> onClick
+    4:4:void com.llexcel.MainActivity.lambda$showOpenDialog$33(java.util.List,android.content.DialogInterface,int):0 -> onClick
     4:4:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    5:5:void com.llexcel.MainActivity.lambda$showOpenDialog$27(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
+    5:5:void com.llexcel.MainActivity.lambda$showOpenDialog$33(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
     5:5:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    6:6:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
-    7:7:void com.llexcel.MainActivity.lambda$createNewBook$28(android.widget.EditText,android.content.DialogInterface,int):0:0 -> onClick
+    6:6:com.llexcel.XlsxBook com.llexcel.XlsxBook.load(java.io.File):0:0 -> onClick
+    6:6:void com.llexcel.MainActivity.lambda$showOpenDialog$33(java.util.List,android.content.DialogInterface,int):0 -> onClick
+    6:6:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    7:7:void com.llexcel.MainActivity.lambda$showOpenDialog$33(java.util.List,android.content.DialogInterface,int):0:0 -> onClick
     7:7:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    8:8:void com.llexcel.MainActivity.lambda$showFormulaHelper$14(java.lang.String[],android.content.DialogInterface,int):0:0 -> onClick
-    8:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    9:9:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
-    10:10:void com.llexcel.MainActivity.lambda$onCreate$8(int[],android.content.DialogInterface,int):0:0 -> onClick
+    8:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    9:9:void com.llexcel.MainActivity.lambda$createNewBook$34(android.widget.EditText,android.content.DialogInterface,int):0:0 -> onClick
+    9:9:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+    10:10:void com.llexcel.MainActivity.lambda$showFormulaHelper$14(java.lang.String[],android.content.DialogInterface,int):0:0 -> onClick
     10:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-com.llexcel.MainActivity$$ExternalSyntheticLambda6 -> a.r:
+    11:11:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
+    12:12:void com.llexcel.MainActivity.lambda$onCreate$8(int[],android.content.DialogInterface,int):0:0 -> onClick
+    12:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$131efa475dfc9d1cd30ecb8a84eeb932ec572673815c685fcc8f7a91e6298cc8$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
+com.llexcel.MainActivity$$ExternalSyntheticLambda6 -> a.s:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$1ab037adafcbf16b7eff30ae4fa7d9baf855d73d832ff6e148438df8eb4558a8$0.f$0 -> a
@@ -579,7 +726,7 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda6 -> a.r:
     1:1:void com.llexcel.MainActivity.lambda$onCreate$0():0:0 -> run
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$1ab037adafcbf16b7eff30ae4fa7d9baf855d73d832ff6e148438df8eb4558a8$0.run():0 -> run
       # {"id":"com.android.tools.r8.synthesized"}
-com.llexcel.MainActivity$$ExternalSyntheticLambda7 -> a.s:
+com.llexcel.MainActivity$$ExternalSyntheticLambda7 -> a.t:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$2669537f26100bde13481f2a259d02ea626928efd1d425125d5f5b0e1ab6a2b9$0.f$0 -> a
@@ -587,81 +734,12 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda7 -> a.s:
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$2669537f26100bde13481f2a259d02ea626928efd1d425125d5f5b0e1ab6a2b9$0.<init>(com.llexcel.MainActivity):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity.showOpenDialog():0:0 -> onClick
-    1:1:void com.llexcel.MainActivity.lambda$showOpenMenu$26(android.content.DialogInterface,int):0 -> onClick
+    1:1:void com.llexcel.MainActivity.lambda$showOpenMenu$32(android.content.DialogInterface,int):0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$2669537f26100bde13481f2a259d02ea626928efd1d425125d5f5b0e1ab6a2b9$0.onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    2:2:void com.llexcel.MainActivity.lambda$showOpenMenu$26(android.content.DialogInterface,int):0:0 -> onClick
+    2:2:void com.llexcel.MainActivity.lambda$showOpenMenu$32(android.content.DialogInterface,int):0:0 -> onClick
     2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$2669537f26100bde13481f2a259d02ea626928efd1d425125d5f5b0e1ab6a2b9$0.onClick(android.content.DialogInterface,int):0 -> onClick
-com.llexcel.MainActivity$$ExternalSyntheticLambda8 -> a.t:
-# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
-# {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.$r8$classId -> a
-      # {"id":"com.android.tools.r8.synthesized"}
-    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.f$0 -> b
-      # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.f$1 -> c
-      # {"id":"com.android.tools.r8.synthesized"}
-    1:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.<init>(com.llexcel.MainActivity,int):0:0 -> <init>
-    1:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.$r8$init$synthetic(com.llexcel.MainActivity,int,int):0 -> <init>
-      # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0:0 -> onClick
-    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.synthesized"}
-    2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
-    3:3:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0:0 -> onClick
-    3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    4:4:void com.llexcel.ExcelGridView.autoFitCol(int):0:0 -> onClick
-    4:4:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    4:4:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    5:5:void com.llexcel.ExcelGridView.autoFitCol(int):0:0 -> onClick
-    5:5:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0 -> onClick
-    5:5:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    6:6:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0:0 -> onClick
-    6:6:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    7:7:void com.llexcel.XlsxBook$Sheet.deleteCol(int):0:0 -> onClick
-    7:7:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    7:7:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    8:8:void com.llexcel.XlsxBook$Sheet.deleteCol(int):0:0 -> onClick
-    8:8:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0 -> onClick
-    8:8:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    9:9:void com.llexcel.MainActivity.lambda$showColDialog$24(int,android.content.DialogInterface,int):0:0 -> onClick
-    9:9:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    10:10:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0:0 -> onClick
-    11:11:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0:0 -> onClick
-    11:11:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    12:12:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
-    12:12:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-    12:12:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    13:13:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0:0 -> onClick
-    13:13:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    14:14:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
-    14:14:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    14:14:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    15:15:void com.llexcel.ExcelGridView.autoFitRow(int):0:0 -> onClick
-    15:15:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-    15:15:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    16:16:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0:0 -> onClick
-    16:16:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    17:17:void com.llexcel.XlsxBook$Sheet.deleteRow(int):0:0 -> onClick
-    17:17:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    17:17:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    18:18:void com.llexcel.XlsxBook$Sheet.deleteRow(int):0:0 -> onClick
-    18:18:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-    18:18:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    19:19:void com.llexcel.XlsxBook$Sheet.deleteRow(int):0:0 -> onClick
-    19:19:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    19:19:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    20:20:void com.llexcel.XlsxBook$Sheet.deleteRow(int):0:0 -> onClick
-    20:20:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0 -> onClick
-    20:20:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-    21:21:void com.llexcel.MainActivity.lambda$showRowDialog$25(int,android.content.DialogInterface,int):0:0 -> onClick
-    21:21:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$3ae4a4a914cdaa52cf8c90de93e3f2564fc1d2852906a320b9a7e36c6ec7ed0f$0.onClick$bridge(android.content.DialogInterface,int):0 -> onClick
-com.llexcel.MainActivity$$ExternalSyntheticLambda9 -> a.u:
+com.llexcel.MainActivity$$ExternalSyntheticLambda8 -> a.u:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.f$0 -> a
@@ -680,15 +758,33 @@ com.llexcel.MainActivity$$ExternalSyntheticLambda9 -> a.u:
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.<init>(com.llexcel.MainActivity,int,int,int,int,int,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$20(int,int,int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
+    1:1:void com.llexcel.MainActivity.lambda$showCellContextMenu$21(int,int,int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
     1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
     2:2:void com.llexcel.MainActivity.showMergeDialog():0:0 -> onClick
-    2:2:void com.llexcel.MainActivity.lambda$showCellContextMenu$20(int,int,int,int,int,int,android.content.DialogInterface,int):0 -> onClick
+    2:2:void com.llexcel.MainActivity.lambda$showCellContextMenu$21(int,int,int,int,int,int,android.content.DialogInterface,int):0 -> onClick
     2:2:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.onClick(android.content.DialogInterface,int):0 -> onClick
-    3:3:void com.llexcel.MainActivity.lambda$showCellContextMenu$20(int,int,int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
+    3:3:void com.llexcel.MainActivity.lambda$showCellContextMenu$21(int,int,int,int,int,int,android.content.DialogInterface,int):0:0 -> onClick
     3:3:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.onClick(android.content.DialogInterface,int):0 -> onClick
-com.llexcel.MainActivity$1 -> a.v:
+    4:4:void com.llexcel.MainActivity.showRowDialog(int):0:0 -> onClick
+    4:4:void com.llexcel.MainActivity.lambda$showCellContextMenu$21(int,int,int,int,int,int,android.content.DialogInterface,int):0 -> onClick
+    4:4:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.onClick(android.content.DialogInterface,int):0 -> onClick
+    5:5:void com.llexcel.MainActivity.showColDialog(int):0:0 -> onClick
+    5:5:void com.llexcel.MainActivity.lambda$showCellContextMenu$21(int,int,int,int,int,int,android.content.DialogInterface,int):0 -> onClick
+    5:5:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$bd31126e5c2e2d72c4d48c5c4ff83d817b8419c790264e6bc60174d71b403121$0.onClick(android.content.DialogInterface,int):0 -> onClick
+com.llexcel.MainActivity$$ExternalSyntheticLambda9 -> a.v:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    com.llexcel.MainActivity com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.f$0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    int com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.f$1 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.<init>(com.llexcel.MainActivity,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    5:46:void com.llexcel.MainActivity.lambda$renderAll$12(int,android.view.View):0:0 -> onClick
+    5:46:void com.llexcel.MainActivity$$InternalSyntheticLambda$2$e518ce6b2457129d445972531a03cfef1933ea6faa8b1922804e3e95107a95f1$0.onClick(android.view.View):0 -> onClick
+      # {"id":"com.android.tools.r8.synthesized"}
+com.llexcel.MainActivity$1 -> a.w:
 # {"id":"sourceFile","fileName":"MainActivity.java"}
     com.llexcel.MainActivity this$0 -> a
     1:1:void <init>(com.llexcel.MainActivity):0:0 -> <init>
@@ -711,7 +807,7 @@ com.llexcel.MainActivity$1 -> a.v:
     31:34:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
     1:1:void beforeTextChanged(java.lang.CharSequence,int,int,int):0:0 -> beforeTextChanged
     1:1:void onTextChanged(java.lang.CharSequence,int,int,int):0:0 -> onTextChanged
-com.llexcel.MainActivity$2 -> a.x:
+com.llexcel.MainActivity$2 -> a.y:
 # {"id":"sourceFile","fileName":"MainActivity.java"}
     com.llexcel.MainActivity this$0 -> a
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
@@ -721,24 +817,24 @@ com.llexcel.MainActivity$2 -> a.x:
     1:1:java.lang.String com.llexcel.XlsxBook.indexToCol(int):0:0 -> c
     1:1:void com.llexcel.XlsxBook.parseSheet(byte[],java.util.List,com.llexcel.XlsxBook$Sheet):0:0 -> d
     1:1:com.llexcel.XlsxBook com.llexcel.XlsxBook.load(java.io.InputStream):0 -> d
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/io/InputStream;)La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/io/InputStream;)La/y;"}
     2:2:com.llexcel.XlsxBook com.llexcel.XlsxBook.load(java.io.InputStream):0:0 -> d
     1:1:void com.llexcel.XlsxBook.putZ(java.util.zip.ZipOutputStream,java.lang.String,java.lang.String):0:0 -> e
     1:1:int com.llexcel.XlsxBook.rowToIndex(java.lang.String):0:0 -> f
     1:1:void com.llexcel.XlsxBook.save(java.io.File):0:0 -> g
     1:1:java.lang.String com.llexcel.XlsxBook.sheetXml(com.llexcel.XlsxBook$Sheet):0:0 -> h
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/a0;)Ljava/lang/String;"}
-com.llexcel.MainActivity$2$$ExternalSyntheticLambda0 -> a.w:
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/b0;)Ljava/lang/String;"}
+com.llexcel.MainActivity$2$$ExternalSyntheticLambda0 -> a.x:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.llexcel.MainActivity$2 com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.f$0 -> a
-      # {"id":"com.android.tools.r8.residualsignature","signature":"La/x;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/y;"}
       # {"id":"com.android.tools.r8.synthesized"}
     int com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.f$1 -> b
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.<init>(com.llexcel.MainActivity$2,int,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/x;II)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/y;II)V"}
     1:1:void com.llexcel.MainActivity$2.lambda$onCellDoubleClick$0(int,int):0:0 -> run
     1:1:void com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.run():0 -> run
       # {"id":"com.android.tools.r8.synthesized"}
@@ -747,7 +843,7 @@ com.llexcel.MainActivity$2$$ExternalSyntheticLambda0 -> a.w:
     2:2:void com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.run():0 -> run
     3:3:void com.llexcel.MainActivity$2.lambda$onCellDoubleClick$0(int,int):0:0 -> run
     3:3:void com.llexcel.MainActivity$2$$InternalSyntheticLambda$2$61e88f898062ef87bc3c0edfed37f3c1b0200bddc84a887de8cc13f1087712dc$0.run():0 -> run
-com.llexcel.SurveyMath -> a.y:
+com.llexcel.SurveyMath -> a.z:
 # {"id":"sourceFile","fileName":"SurveyMath.java"}
     double[] GaussRr -> a
     double[] GaussVv -> b
@@ -762,7 +858,7 @@ com.llexcel.SurveyMath -> a.y:
     1:1:double[] utmProj(double,double):0:0 -> g
 com.llexcel.XlsxBook -> R8$$REMOVED$$CLASS$$0:
 # {"id":"sourceFile","fileName":"XlsxBook.java"}
-com.llexcel.XlsxBook$Sheet -> a.a0:
+com.llexcel.XlsxBook$Sheet -> a.b0:
 # {"id":"sourceFile","fileName":"XlsxBook.java"}
     java.lang.String name -> a
     java.util.List rows -> b
@@ -770,23 +866,28 @@ com.llexcel.XlsxBook$Sheet -> a.a0:
     java.util.List merges -> c
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
     1:1:void <init>(java.lang.String):0:0 -> <init>
-    1:1:java.lang.String get(int,int):0:0 -> a
-    1:1:void insertCol(int):0:0 -> b
-    1:1:void insertRow(int):0:0 -> c
-    1:1:void set(int,int,java.lang.String):0:0 -> d
-com.llexcel.XlsxBook$Sheet$$ExternalSyntheticLambda0 -> a.z:
+    1:1:void deleteCols(int,int):0:0 -> a
+    1:1:void deleteRows(int,int):0:0 -> b
+    1:1:java.lang.String get(int,int):0:0 -> c
+    1:1:void insertCols(int,int):0:0 -> d
+    1:1:void insertRows(int,int):0:0 -> e
+    1:1:void set(int,int,java.lang.String):0:0 -> f
+    1:1:void shiftFormulas(int,int,int,int):0:0 -> g
+com.llexcel.XlsxBook$Sheet$$ExternalSyntheticLambda0 -> a.a0:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.$r8$classId -> a
+    int com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.$r8$classId -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    int com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.f$0 -> b
+    int com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.f$0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    1:8:void com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.<init>(int):0:0 -> <init>
-    1:8:void com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.$r8$init$synthetic(int,int):0 -> <init>
+    int com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.f$1 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    12:23:boolean com.llexcel.XlsxBook$Sheet.lambda$deleteRow$0(int,int[]):0:0 -> test
-    12:23:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.test$bridge(java.lang.Object):0 -> test
+    1:10:void com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.<init>(int,int):0:0 -> <init>
+    1:10:void com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.$r8$init$synthetic(int,int,int):0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    24:25:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.test$bridge(java.lang.Object):0:0 -> test
-    26:38:boolean com.llexcel.XlsxBook$Sheet.lambda$deleteCol$1(int,int[]):0:0 -> test
-    26:38:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$3$318e58536ac616ed63dbbcf639e798ebfc72a3b0aaff60428bd60e9a0856b0fc$0.test$bridge(java.lang.Object):0 -> test
+    14:25:boolean com.llexcel.XlsxBook$Sheet.lambda$deleteCols$1(int,int,int[]):0:0 -> test
+    14:25:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.test$bridge(java.lang.Object):0 -> test
+      # {"id":"com.android.tools.r8.synthesized"}
+    26:27:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.test$bridge(java.lang.Object):0:0 -> test
+    28:40:boolean com.llexcel.XlsxBook$Sheet.lambda$deleteRows$0(int,int,int[]):0:0 -> test
+    28:40:boolean com.llexcel.XlsxBook$Sheet$$InternalSyntheticLambda$4$d1a83f01033b23271e9b07a01c9e859247eb6c17b7698417d567cfb609d6e3ec$0.test$bridge(java.lang.Object):0 -> test

@@ -12,24 +12,72 @@ public class XlsxBook {
         public List<List<String>> rows = new ArrayList<>();
         public List<int[]> merges = new ArrayList<>(); // [r1, c1, r2, c2]
         public Sheet(String n) { name = n; }
-        public void insertRow(int r) {
-            if (r >= 0 && r <= rows.size()) rows.add(r, new ArrayList<>());
-            for (int[] m : merges) { if (m[0] >= r) m[0]++; if (m[2] >= r) m[2]++; }
+        public void insertRows(int r, int count) {
+            if (count <= 0) return;
+            int pos = Math.max(0, Math.min(r, rows.size()));
+            for (int k = 0; k < count; k++) rows.add(pos, new ArrayList<>());
+            for (int[] m : merges) { if (m[0] >= pos) m[0] += count; if (m[2] >= pos) m[2] += count; }
+            shiftFormulas(pos, count, -1, 0);
         }
-        public void deleteRow(int r) {
-            if (r >= 0 && r < rows.size()) rows.remove(r);
-            merges.removeIf(m -> m[0] == r && m[2] == r);
-            for (int[] m : merges) { if (m[0] > r) m[0]--; if (m[2] >= r) m[2]--; }
+        public void deleteRows(int r, int count) {
+            if (count <= 0 || r < 0 || r >= rows.size()) return;
+            int del = Math.min(count, rows.size() - r);
+            for (int k = 0; k < del; k++) rows.remove(r);
+            merges.removeIf(m -> m[0] >= r && m[2] < r + del);
+            for (int[] m : merges) {
+                if (m[0] >= r + del) m[0] -= del; else if (m[0] > r) m[0] = r;
+                if (m[2] >= r + del) m[2] -= del; else if (m[2] >= r) m[2] = Math.max(r - 1, m[0]);
+            }
+            shiftFormulas(r, -del, -1, 0);
         }
-        public void insertCol(int c) {
-            for (List<String> row : rows) if (c >= 0 && c <= row.size()) row.add(c, "");
-            for (int[] m : merges) { if (m[1] >= c) m[1]++; if (m[3] >= c) m[3]++; }
+        public void insertCols(int c, int count) {
+            if (count <= 0) return;
+            for (List<String> row : rows) {
+                int pos = Math.max(0, Math.min(c, row.size()));
+                for (int k = 0; k < count; k++) row.add(pos, "");
+            }
+            for (int[] m : merges) { if (m[1] >= c) m[1] += count; if (m[3] >= c) m[3] += count; }
+            shiftFormulas(-1, 0, c, count);
         }
-        public void deleteCol(int c) {
-            for (List<String> row : rows) if (c >= 0 && c < row.size()) row.remove(c);
-            merges.removeIf(m -> m[1] == c && m[3] == c);
-            for (int[] m : merges) { if (m[1] > c) m[1]--; if (m[3] >= c) m[3]--; }
+        public void deleteCols(int c, int count) {
+            if (count <= 0 || c < 0) return;
+            for (List<String> row : rows) {
+                if (c < row.size()) {
+                    int del = Math.min(count, row.size() - c);
+                    for (int k = 0; k < del; k++) row.remove(c);
+                }
+            }
+            merges.removeIf(m -> m[1] >= c && m[3] < c + count);
+            for (int[] m : merges) {
+                if (m[1] >= c + count) m[1] -= count; else if (m[1] > c) m[1] = c;
+                if (m[3] >= c + count) m[3] -= count; else if (m[3] >= c) m[3] = Math.max(c - 1, m[1]);
+            }
+            shiftFormulas(-1, 0, c, -count);
         }
+        private void shiftFormulas(int rowAt, int dRow, int colAt, int dCol) {
+            java.util.regex.Pattern pat = java.util.regex.Pattern.compile("\\b([A-Z]+)([0-9]+)\\b", java.util.regex.Pattern.CASE_INSENSITIVE);
+            for (List<String> row : rows) {
+                for (int i = 0; i < row.size(); i++) {
+                    String v = row.get(i);
+                    if (v != null && v.startsWith("=")) {
+                        java.util.regex.Matcher m = pat.matcher(v);
+                        StringBuffer sb = new StringBuffer();
+                        while (m.find()) {
+                            int cc = colToIndex(m.group(1)), rr = Integer.parseInt(m.group(2)) - 1;
+                            if (dRow != 0 && rr >= rowAt) rr = Math.max(0, rr + dRow);
+                            if (dCol != 0 && cc >= colAt) cc = Math.max(0, cc + dCol);
+                            m.appendReplacement(sb, indexToCol(cc) + (rr + 1));
+                        }
+                        m.appendTail(sb);
+                        row.set(i, sb.toString());
+                    }
+                }
+            }
+        }
+        public void insertRow(int r) { insertRows(r, 1); }
+        public void deleteRow(int r) { deleteRows(r, 1); }
+        public void insertCol(int c) { insertCols(c, 1); }
+        public void deleteCol(int c) { deleteCols(c, 1); }
         public String get(int r, int col) {
             if (r < 0 || r >= rows.size()) return "";
             List<String> row = rows.get(r);
