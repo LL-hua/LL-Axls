@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is /data/data/com.termux/files/home/LL-excel/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.2.0
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.2.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -117,11 +117,11 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from /data/data/com.termux/files/home/LL-excel/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.2.0
-# The proguard configuration file for the following section is /data/data/com.termux/files/home/LL-excel/app/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# End of content from /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.2.0
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class com.llexcel.MainActivity { <init>(); }
 
-# End of content from /data/data/com.termux/files/home/LL-excel/app/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# End of content from /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
 # The proguard configuration file for the following section is <unknown>
 
 # End of content from <unknown>

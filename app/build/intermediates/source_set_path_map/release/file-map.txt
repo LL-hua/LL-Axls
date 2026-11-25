@@ -1,8 +1,8 @@
-com.llexcel.app-pngs-0 /data/data/com.termux/files/home/LL-excel/app/build/generated/res/pngs/release
-com.llexcel.app-resValues-1 /data/data/com.termux/files/home/LL-excel/app/build/generated/res/resValues/release
-com.llexcel.app-packageReleaseResources-2 /data/data/com.termux/files/home/LL-excel/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
-com.llexcel.app-packageReleaseResources-3 /data/data/com.termux/files/home/LL-excel/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
-com.llexcel.app-merged-not-compiled-resources-4 /data/data/com.termux/files/home/LL-excel/app/build/intermediates/merged-not-compiled-resources/release
-com.llexcel.app-merged_res-5 /data/data/com.termux/files/home/LL-excel/app/build/intermediates/merged_res/release
-com.llexcel.app-main-6 /data/data/com.termux/files/home/LL-excel/app/src/main/res
-com.llexcel.app-release-7 /data/data/com.termux/files/home/LL-excel/app/src/release/res
+com.llexcel.app-pngs-0 /data/data/com.termux/files/home/LL-Axls/app/build/generated/res/pngs/release
+com.llexcel.app-resValues-1 /data/data/com.termux/files/home/LL-Axls/app/build/generated/res/resValues/release
+com.llexcel.app-packageReleaseResources-2 /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.llexcel.app-packageReleaseResources-3 /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.llexcel.app-merged-not-compiled-resources-4 /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/merged-not-compiled-resources/release
+com.llexcel.app-merged_res-5 /data/data/com.termux/files/home/LL-Axls/app/build/intermediates/merged_res/release
+com.llexcel.app-main-6 /data/data/com.termux/files/home/LL-Axls/app/src/main/res
+com.llexcel.app-release-7 /data/data/com.termux/files/home/LL-Axls/app/src/release/res

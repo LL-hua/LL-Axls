@@ -142,7 +142,7 @@ public class MainActivity extends Activity {
         root.addView(numPad);
         setContentView(root);
 
-        bOpen.setOnClickListener(v -> showOpenDialog());
+        bOpen.setOnClickListener(v -> showOpenMenu());
         bNew.setOnClickListener(v -> createNewBook());
         bSave.setOnClickListener(v -> saveCurrentBook()); bFont.setOnClickListener(v -> { useSingle = !useSingle; curFont = useSingle ? singleFont : Typeface.SANS_SERIF; gridView.setFont(curFont); etFormula.setTypeface(curFont); Toast.makeText(this, useSingle ? "已切换: CAD单线体" : "已切换: 系统标准体", Toast.LENGTH_SHORT).show(); });
 
@@ -155,6 +155,7 @@ public class MainActivity extends Activity {
             } catch (Exception ignored) {}
         }
         renderAll();
+        if (getIntent() != null && getIntent().getData() != null) handleUri(getIntent().getData());
     }
     private XlsxBook.Sheet activeSheet() {
         if (book.sheets.isEmpty()) book.sheets.add(new XlsxBook.Sheet("Sheet1"));
@@ -290,6 +291,7 @@ public class MainActivity extends Activity {
             b.setNeutralButton("拆分取消合并", (d, w) -> {
                 sh.merges.remove(finalCurM);
                 renderAll();
+        if (getIntent() != null && getIntent().getData() != null) handleUri(getIntent().getData());
             });
         }
         b.show();
@@ -308,6 +310,7 @@ public class MainActivity extends Activity {
                 else if (w == 4) sh.deleteCol(col);
                 else if (w == 5) gridView.extraCols += 2;
                 renderAll();
+        if (getIntent() != null && getIntent().getData() != null) handleUri(getIntent().getData());
             }).show();
     }
 
@@ -324,6 +327,7 @@ public class MainActivity extends Activity {
                 else if (w == 4) sh.deleteRow(row);
                 else if (w == 5) gridView.extraRows += 5;
                 renderAll();
+        if (getIntent() != null && getIntent().getData() != null) handleUri(getIntent().getData());
             }).show();
     }
 
@@ -338,6 +342,42 @@ public class MainActivity extends Activity {
             }).show();
     }
 
+    @Override protected void onActivityResult(int req, int res, android.content.Intent data) {
+        super.onActivityResult(req, res, data);
+        if (req == 101 && res == RESULT_OK && data != null && data.getData() != null) handleUri(data.getData());
+    }
+    private void handleUri(android.net.Uri u) {
+        if (u == null) return;
+        try {
+            String fn = "外部表格.xlsx";
+            try (android.database.Cursor c = getContentResolver().query(u, null, null, null, null)) {
+                if (c != null && c.moveToFirst()) { int idx = c.getColumnIndex(android.provider.OpenableColumns.DISPLAY_NAME); if (idx >= 0) fn = c.getString(idx); }
+            }
+            try (java.io.InputStream in = getContentResolver().openInputStream(u)) {
+                book = XlsxBook.load(in);
+            }
+            File dir = new File("/storage/emulated/0/1hdm"); if (!dir.exists()) dir.mkdirs();
+            File dst = new File(dir, fn);
+            if (dst.exists()) {
+                int dot = fn.lastIndexOf(".");
+                String base = dot > 0 ? fn.substring(0, dot) : fn;
+                String ext = dot > 0 ? fn.substring(dot) : ".xlsx";
+                int idx = 1;
+                while (dst.exists()) { dst = new File(dir, base + "(" + idx++ + ")" + ext); }
+                fn = dst.getName();
+            }
+            curFile = dst;
+            curSheet = 0; selR = 0; selC = 0;
+            tvTitle.setText(fn); etFormula.setText(""); selectCell(0, 0); renderAll();
+        } catch (Exception e) { Toast.makeText(this, "读取失败: " + e.getMessage(), Toast.LENGTH_LONG).show(); }
+    }
+
+    private void showOpenMenu() {
+        new AlertDialog.Builder(this).setTitle("打开表格").setItems(new String[]{"打开 /sdcard/1hdm/ 目录", "浏览手机全部文件夹"}, (d, w) -> {
+            if (w == 0) showOpenDialog();
+            else { android.content.Intent it = new android.content.Intent(android.content.Intent.ACTION_OPEN_DOCUMENT); it.addCategory(android.content.Intent.CATEGORY_OPENABLE); it.setType("*/*"); startActivityForResult(it, 101); }
+        }).show();
+    }
     private void showOpenDialog() {
         File dir = new File("/storage/emulated/0/1hdm");
         File[] fs = dir.listFiles();
@@ -368,7 +408,7 @@ public class MainActivity extends Activity {
 
     private void saveCurrentBook() {
         if (curFile == null) { createNewBook(); return; }
-        try { book.save(curFile); Toast.makeText(this, "已保存: " + curFile.getName(), Toast.LENGTH_SHORT).show(); }
+        try { File tmp = new File(curFile.getParentFile(), curFile.getName() + ".tmp"); book.save(tmp); if (tmp.length() > 0) { if (curFile.exists()) curFile.delete(); tmp.renameTo(curFile); } Toast.makeText(this, "已保存: " + curFile.getName(), Toast.LENGTH_SHORT).show(); }
         catch (Exception e) { Toast.makeText(this, "保存失败: " + e.getMessage(), Toast.LENGTH_LONG).show(); }
     }
 }

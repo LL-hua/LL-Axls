@@ -63,10 +63,11 @@ public class XlsxBook {
         while (c > 0) { int m = (c - 1) % 26; sb.insert(0, (char)('A' + m)); c = (c - m) / 26; }
         return sb.toString();
     }
-    public static XlsxBook load(File file) throws Exception {
+    public static XlsxBook load(File file) throws Exception { try (InputStream in = new FileInputStream(file)) { return load(in); } }
+    public static XlsxBook load(InputStream in) throws Exception {
         XlsxBook book = new XlsxBook();
         Map<String, byte[]> zipMap = new HashMap<>();
-        try (ZipInputStream zis = new ZipInputStream(new FileInputStream(file))) {
+        try (ZipInputStream zis = new ZipInputStream(in)) {
             ZipEntry e;
             while ((e = zis.getNextEntry()) != null) {
                 if (!e.isDirectory()) {
