@@ -1,5 +1,1 @@
-com.llexcel:mipmap/ic_launcher = 0x7f020000
-com.llexcel:drawable/ic_launcher_bg = 0x7f010002
-com.llexcel:drawable/ic_launcher_fg = 0x7f010003
-com.llexcel:drawable/ic_excel = 0x7f010001
-com.llexcel:drawable/$ic_launcher_bg__0 = 0x7f010000
+com.llexcel:drawable/ic_excel = 0x7f010000
