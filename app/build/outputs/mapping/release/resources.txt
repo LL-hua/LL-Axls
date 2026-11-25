@@ -1,0 +1,20 @@
+@drawable/$ic_launcher_bg__0 : reachable=false
+@drawable/ic_excel : reachable=true
+@drawable/ic_launcher_bg : reachable=false
+    @drawable/$ic_launcher_bg__0
+@drawable/ic_launcher_fg : reachable=false
+@mipmap/ic_launcher : reachable=false
+    @drawable/ic_launcher_bg
+    @drawable/ic_launcher_fg
+
+The root reachable resources are:
+ drawable:ic_excel:2130771969
+Unused resources are: 
+ drawable:$ic_launcher_bg__0:2130771968
+ drawable:ic_launcher_bg:2130771970
+ drawable:ic_launcher_fg:2130771971
+ mipmap:ic_launcher:2130837504
+Skipped unused resource res/drawable/$ic_launcher_bg__0.xml: 825 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/ic_launcher_bg.xml: 686 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/ic_launcher_fg.xml: 3566 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/mipmap-anydpi-v26/ic_launcher.xml: 389 bytes (replaced with small dummy file of size 9 bytes)

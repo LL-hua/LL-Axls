@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    
+    
+    
+    namespace 'com.llexcel'
+    compileSdk 34
+    
+    lint {
+        checkReleaseBuilds false
+    }
+
+    defaultConfig {
+        applicationId "com.llexcel"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(System.getProperty("user.home") + "/android-release.keystore")
+            storePassword "123456"
+            keyAlias "android"
+            keyPassword "123456"
+        }
+    }
+
+    packagingOptions { jniLibs { useLegacyPackaging = true } }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}

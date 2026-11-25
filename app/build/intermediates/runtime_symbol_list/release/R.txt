@@ -1,0 +1,4 @@
+int drawable ic_excel 0x7f010001
+int drawable ic_launcher_bg 0x7f010002
+int drawable ic_launcher_fg 0x7f010003
+int mipmap ic_launcher 0x7f020000

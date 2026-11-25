@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.llexcel.app-merged_res-5:/drawable_ic_excel.png.flat",
+        "source": "com.llexcel.app-main-6:/drawable/ic_excel.png"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-merged_res-5:/drawable_ic_launcher_bg.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-main-6:/drawable/ic_launcher_bg.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-merged_res-5:/drawable_ic_launcher_fg.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-main-6:/drawable/ic_launcher_fg.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.5/com.llexcel.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    }
+]

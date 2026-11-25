@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 坐标轴（X 轴、Y 轴及箭头，严格控制在安全区内） -->
+    <path
+        android:pathData="M28,50 L78,50 M54,71 L54,28"
+        android:strokeColor="#2B5B6C"
+        android:strokeWidth="0.9"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M77,48.5 L80.8,50 L77,51.5 Z M52.5,29 L54,25.2 L55.5,29 Z"
+        android:fillColor="#2B5B6C" />
+
+    <!-- 原点同心圆 -->
+    <path
+        android:pathData="M54,43.5 A6.5,6.5 0 1,0 54,56.5 A6.5,6.5 0 1,0 54,43.5 Z
+                        M54,45.8 A4.2,4.2 0 1,0 54,54.2 A4.2,4.2 0 1,0 54,45.8 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#2B5B6C"
+        android:strokeWidth="0.85" />
+
+    <!-- 第一象限三段同心圆弧 -->
+    <path
+        android:pathData="M54,36.5 A13.5,13.5 0 0,1 67.5,50
+                        M54,33 A17,17 0 0,1 71,50
+                        M54,29.5 A20.5,20.5 0 0,1 74.5,50"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#2B5B6C"
+        android:strokeWidth="0.85"
+        android:strokeLineCap="round" />
+
+    <!-- 放大的坐标轴字母 Y 和 X（硬朗折线） -->
+    <path
+        android:pathData="M46.5,26 L49.2,30.2 L51.9,26 M49.2,30.2 L49.2,34.5
+                        M72.5,53 L76.5,58.8 M76.5,53 L72.5,58.8"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#2B5B6C"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter" />
+
+    <!-- 底部 dwg 字样（硬朗折线，居中落在 x:42~66, y:75~82） -->
+    <path
+        android:pathData="M46.2,75 L46.2,82 M46.2,77.2 L42.5,77.2 L42.5,82 L46.2,82
+                        M49.5,77.2 L50.8,82 L52.2,78.5 L53.6,82 L54.9,77.2
+                        M62.2,77.2 L58.2,77.2 L58.2,82 L62.2,82 M62.2,77.2 L62.2,84.2 L58.2,84.2"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#2B5B6C"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter" />
+</vector>

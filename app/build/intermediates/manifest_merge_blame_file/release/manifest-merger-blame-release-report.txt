@@ -1,0 +1,59 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.llexcel"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:3:5-81
+11-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:3:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:4:5-80
+12-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:4:22-77
+13    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+13-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:5:5-82
+13-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:5:22-79
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:7:9-83
+14-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:7:26-80
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:8:5-81
+15-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:8:22-78
+16
+17    <application
+17-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:9:5-20:19
+18        android:allowBackup="true"
+18-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:10:9-35
+19        android:extractNativeLibs="true"
+20        android:icon="@drawable/ic_excel"
+20-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:9:18-51
+21        android:label="LL-excel"
+21-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:11:9-33
+22        android:requestLegacyExternalStorage="true"
+22-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:12:9-52
+23        android:theme="@android:style/Theme.DeviceDefault" >
+23-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:13:9-59
+24        <activity
+24-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:14:9-19:20
+25            android:name="com.llexcel.MainActivity"
+25-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:14:19-47
+26            android:exported="true" >
+26-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:14:48-71
+27            <intent-filter>
+27-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:15:13-18:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:16:17-69
+28-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:16:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:17:17-77
+30-->/data/data/com.termux/files/home/LL-excel/app/src/main/AndroidManifest.xml:17:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>
