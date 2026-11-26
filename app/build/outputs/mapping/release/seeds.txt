@@ -1,4 +1,4 @@
 com.llexcel.MainActivity
-com.llexcel.ExcelGridView: void setFontSize(float)
-com.llexcel.ExcelGridView: void setFont(android.graphics.Typeface)
 com.llexcel.MainActivity: MainActivity()
+com.llexcel.ExcelGridView: void setFont(android.graphics.Typeface)
+com.llexcel.ExcelGridView: void setFontSize(float)

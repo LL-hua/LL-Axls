@@ -10,7 +10,8 @@ public class XlsxBook {
     public static class Sheet {
         public String name;
         public List<List<String>> rows = new ArrayList<>();
-        public List<int[]> merges = new ArrayList<>(); // [r1, c1, r2, c2]
+        public List<int[]> merges = new ArrayList<>();
+        public Map<Long, String> cache = new HashMap<>(); // [r1, c1, r2, c2]
         public Sheet(String n) { name = n; }
         public void insertRows(int r, int count) {
             if (count <= 0) return;
@@ -93,6 +94,7 @@ public class XlsxBook {
     public List<Sheet> sheets = new ArrayList<>();
 
     public static int colToIndex(String ref) {
+        ref = ref.replace("$", "");
         int col = 0;
         for (int i = 0; i < ref.length(); i++) {
             char ch = ref.charAt(i);
@@ -103,6 +105,7 @@ public class XlsxBook {
         return col - 1;
     }
     public static int rowToIndex(String ref) {
+        ref = ref.replace("$", "");
         int i = 0; while (i < ref.length() && Character.isLetter(ref.charAt(i))) i++;
         return i < ref.length() ? Integer.parseInt(ref.substring(i)) - 1 : 0;
     }

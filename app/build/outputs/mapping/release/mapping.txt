@@ -3,8 +3,8 @@
 # min_api: 24
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: cb34aef
-# pg_map_hash: SHA-256 cb34aef5509b759bbda15e07215c4767007a8dfbdb66a5f65ab94131fbcece0f
+# pg_map_id: 64c65d1
+# pg_map_hash: SHA-256 64c65d15781dd3cdc229c8386ea303a62f8276d75c291b60c996ca1555c84e5d
 com.llexcel.ExcelGridView -> a.b:
 # {"id":"sourceFile","fileName":"ExcelGridView.java"}
     com.llexcel.XlsxBook book -> a
@@ -264,24 +264,36 @@ com.llexcel.FormulaEngine -> a.d:
     java.util.regex.Pattern RANGE_P -> a
     java.util.regex.Pattern CELL_P -> b
     1:1:void <clinit>():0:0 -> <clinit>
-    1:1:java.lang.String com.llexcel.SurveyMath.num2K(double):0:0 -> a
-    1:1:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
+    1:1:java.lang.String evalIf(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/b0;La/y;Ljava/util/HashSet;)Ljava/lang/String;"}
-    2:2:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
-    3:3:java.util.List com.llexcel.FormulaEngine.collectRange(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
-    3:3:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
-    4:4:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
-    5:5:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0:0 -> a
-    5:5:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
-    6:6:double com.llexcel.FormulaEngine$1.parse():0:0 -> a
-    6:6:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0 -> a
-    6:6:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
-    7:7:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> a
-    8:8:double com.llexcel.FormulaEngine$1.parse():0:0 -> a
-    8:8:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0 -> a
-    8:8:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> a
-    1:1:double[][] readTable(com.llexcel.XlsxBook,java.lang.String,int):0:0 -> b
+    1:1:java.lang.String com.llexcel.SurveyMath.num2K(double):0:0 -> b
+    1:1:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/b0;La/y;Ljava/util/HashSet;)Ljava/lang/String;"}
+    2:2:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> b
+    3:3:java.util.List com.llexcel.FormulaEngine.collectRange(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> b
+    3:3:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> b
+    4:4:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> b
+    5:5:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0:0 -> b
+    5:5:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> b
+    6:6:double com.llexcel.FormulaEngine$1.parse():0:0 -> b
+    6:6:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0 -> b
+    6:6:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> b
+    7:7:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> b
+    8:8:double com.llexcel.FormulaEngine$1.parse():0:0 -> b
+    8:8:double com.llexcel.FormulaEngine.evalMath(java.lang.String,com.llexcel.XlsxBook):0 -> b
+    8:8:java.lang.String evalInternal(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> b
+    1:1:com.llexcel.XlsxBook$Sheet com.llexcel.FormulaEngine.findSheet(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook):0:0 -> c
+    1:1:java.lang.String evalVlookup(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/b0;La/y;Ljava/util/HashSet;)Ljava/lang/String;"}
+    2:2:java.lang.String evalVlookup(java.lang.String,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> c
+    1:1:java.lang.String getCellStr(com.llexcel.XlsxBook$Sheet,int,int,com.llexcel.XlsxBook,java.util.Set):0:0 -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/b0;IILa/y;Ljava/util/HashSet;)Ljava/lang/String;"}
+    1:1:double[][] readTable(com.llexcel.XlsxBook,java.lang.String,int):0:0 -> e
       # {"id":"com.android.tools.r8.residualsignature","signature":"(La/y;Ljava/lang/String;I)[[D"}
+    1:1:java.lang.String replaceCall(java.lang.String,java.lang.String,boolean,com.llexcel.XlsxBook$Sheet,com.llexcel.XlsxBook,java.util.Set):0:0 -> f
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ljava/lang/String;ZLa/b0;La/y;Ljava/util/HashSet;)Ljava/lang/String;"}
+    1:1:java.util.List splitArgs(java.lang.String):0:0 -> g
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;)Ljava/util/ArrayList;"}
 com.llexcel.FormulaEngine$1 -> a.c:
 # {"id":"sourceFile","fileName":"FormulaEngine.java"}
     int pos -> a
@@ -792,19 +804,27 @@ com.llexcel.MainActivity$1 -> a.w:
     3:6:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
     7:10:com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity.access$300(com.llexcel.MainActivity):0:0 -> afterTextChanged
     7:10:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    11:12:int com.llexcel.MainActivity.access$100(com.llexcel.MainActivity):0:0 -> afterTextChanged
-    11:12:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    13:14:int com.llexcel.MainActivity.access$200(com.llexcel.MainActivity):0:0 -> afterTextChanged
-    13:14:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    15:21:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
-    22:23:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> afterTextChanged
-    22:23:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    24:25:int com.llexcel.MainActivity.access$100(com.llexcel.MainActivity):0:0 -> afterTextChanged
-    24:25:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    26:28:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
-    29:30:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> afterTextChanged
-    29:30:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
-    31:34:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
+    11:12:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
+    13:18:int com.llexcel.MainActivity.access$100(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    13:18:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    19:28:int com.llexcel.MainActivity.access$200(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    19:28:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    29:35:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
+    36:39:com.llexcel.XlsxBook$Sheet com.llexcel.MainActivity.access$300(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    36:39:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    40:41:int com.llexcel.MainActivity.access$100(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    40:41:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    42:43:int com.llexcel.MainActivity.access$200(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    42:43:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    44:50:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
+    51:52:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    51:52:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    53:54:int com.llexcel.MainActivity.access$100(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    53:54:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    55:57:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
+    58:59:com.llexcel.ExcelGridView com.llexcel.MainActivity.access$400(com.llexcel.MainActivity):0:0 -> afterTextChanged
+    58:59:void afterTextChanged(android.text.Editable):0 -> afterTextChanged
+    60:63:void afterTextChanged(android.text.Editable):0:0 -> afterTextChanged
     1:1:void beforeTextChanged(java.lang.CharSequence,int,int,int):0:0 -> beforeTextChanged
     1:1:void onTextChanged(java.lang.CharSequence,int,int,int):0:0 -> onTextChanged
 com.llexcel.MainActivity$2 -> a.y:
@@ -865,6 +885,8 @@ com.llexcel.XlsxBook$Sheet -> a.b0:
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
     java.util.List merges -> c
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
+    java.util.Map cache -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/HashMap;"}
     1:1:void <init>(java.lang.String):0:0 -> <init>
     1:1:void deleteCols(int,int):0:0 -> a
     1:1:void deleteRows(int,int):0:0 -> b

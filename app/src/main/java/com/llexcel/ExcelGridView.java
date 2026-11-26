@@ -95,7 +95,7 @@ public class ExcelGridView extends View {
         String raw = sheet.get(r, col);
         if (!raw.startsWith("=")) return raw;
         long key = (((long) r) << 32) | (col & 0xffffffffL);
-        String v = evalCache.get(key);
+        String v = sheet.cache.containsKey(key) ? sheet.cache.get(key) : evalCache.get(key);
         if (v == null) { v = FormulaEngine.evaluate(raw, sheet, book); evalCache.put(key, v); }
         return v;
     }

@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
             @Override public void onTextChanged(CharSequence s, int start, int before, int count) {}
             @Override public void afterTextChanged(android.text.Editable s) {
                 if (!ignoreTextChange) {
-                    activeSheet().set(selR, selC, s.toString());
+                    activeSheet().cache.remove((((long) selR) << 32) | (selC & 0xffffffffL)); activeSheet().set(selR, selC, s.toString());
                     gridView.ensureCellVisible(selR, selC); gridView.invalidate();
                 }
             }
@@ -207,7 +207,7 @@ public class MainActivity extends Activity {
     private void selectCell(int r, int c) {
         String fx = etFormula.getText().toString();
         String ref = XlsxBook.indexToCol(c) + (r + 1);
-        if (fx.startsWith("=") && !(r == selR && c == selC)) {
+        int cPos = Math.max(etFormula.getSelectionStart(), 0); char prevCh = (cPos > 0 && cPos <= fx.length()) ? fx.charAt(cPos - 1) : '\0'; if (fx.startsWith("=") && !(r == selR && c == selC) && "=+-*/(,:<> ".indexOf(prevCh) >= 0 && etFormula.hasFocus()) {
             int pos = Math.max(etFormula.getSelectionStart(), fx.length());
             String left = fx.substring(0, pos);
             String right = fx.substring(pos);
@@ -223,7 +223,7 @@ public class MainActivity extends Activity {
         selR = r; selC = c; gridView.selR = r; gridView.selC = c; gridView.selEndR = -1; gridView.selEndC = -1; gridView.selEndR = -1; gridView.selEndC = -1;
         tvCellRef.setText(ref);
         ignoreTextChange = true;
-        etFormula.setText(activeSheet().get(r, c));
+        etFormula.clearFocus(); etFormula.setText(activeSheet().get(r, c));
         etFormula.setSelection(etFormula.getText().length());
         ignoreTextChange = false;
         gridView.ensureCellVisible(selR, selC); gridView.invalidate();
@@ -256,7 +256,7 @@ public class MainActivity extends Activity {
     }
 
     private void commitAndMove(int dRow, int dCol) {
-        activeSheet().set(selR, selC, etFormula.getText().toString().trim());
+        activeSheet().cache.remove((((long) selR) << 32) | (selC & 0xffffffffL)); activeSheet().set(selR, selC, etFormula.getText().toString().trim());
 
         gridView.refreshData(); gridView.ensureCellVisible(selR, selC);
         int nr = Math.max(0, selR + dRow), nc = Math.max(0, selC + dCol);
